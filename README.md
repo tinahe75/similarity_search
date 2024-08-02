@@ -31,6 +31,16 @@ The API call will return the top 10 most similar images' URL and their similarit
 
 If the url is invalid (not in the database), an error msg will be returned.
 
+### Docker container
+
+Steps for building the Docker container: 
+
+```
+cd similarity_search
+docker compose build
+docker compose up -d
+```
+After this, you can directly send requests.
 
 ### Send requests 
 
@@ -54,4 +64,5 @@ The script prints out the top 10 ranked similar items, with their urls and score
 
 I added an option to visualize the input and output images, but this option doesn't seem to work within Docker. 
 Therefore the `--viz` flag is defaulted to FALSE. But if running locally, this flag can be enabled to visualize how good the matches are. 
+
 
