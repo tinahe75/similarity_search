@@ -1,0 +1,8 @@
+version: "3"
+services:
+  image_similarity:
+    restart: always 
+    container_name: image_similarity
+    image: image_similarity
+    build: 
+      context: . 
