@@ -1,4 +1,14 @@
-## Image search
+# Image search
+
+## Task description
+
+Given an input CSV containing product images (URLs), create an image similarity search web service. 
+When the user provides a URL, return URLs of up to 10 similar images. 
+Create a web service, which runs in a Docker container that is as small and efficient as possible.
+
+Since all input URLs are included in the CSV, image representations can be pre-computed offline. 
+
+## Files + components explained
 
 ### Saving images
 
